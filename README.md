@@ -120,7 +120,105 @@ $tareas = $_SESSION['tareas'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestor de Tareas</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+form {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 70px;
+    text-align: center;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+}
+
+.task-list {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.task-list li {
+    background-color: #fff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list li.completada {
+    background-color: #d3ffd3;
+}
+
+.buttons-task {
+    display: flex;
+    gap: 10px;
+}
+    </style>
 </head>
 <body>
     <!-- Formulario para agregar tareas -->
@@ -156,9 +254,10 @@ $tareas = $_SESSION['tareas'];
             <p>No hay tareas para mostrar.</p>
         <?php endif; ?>
     </div>
+    <div class="image-container" style="text-align: center; margin-top: 30px;">
+        <img src="imagenes/imagen.jpeg" alt="Imagen de WhatsApp" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
+        </a>
+    </div>
 
 </body>
 </html>
-
-### **
-

@@ -1,6 +1,6 @@
 # Desarrollo de Aplicaciones en Internet - Laboratorio 03: Formularios y Manejo de Datos
 
-![Logo del Proyecto](imagenes/proyect.jpeg)
+![Logo del Proyecto](proyect.jpeg)
 
 
 ## 🎯 **Objetivos**
